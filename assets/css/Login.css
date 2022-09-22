@@ -23,7 +23,7 @@
     src: url('/assets/font/NotoSansKR-Regular.otf') format('opentype');
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: darkgray;
+    color: white;
     opacity: 1; /* Firefox */
     font-family: NotoSansKR-Regular;
     font-size: 0.8333333333333334VW;
@@ -31,15 +31,17 @@
 .logintxt {
     font-family: NotoSansKR-Regular;
     font-size: 1.4583333333333333VW;
+    color: white;
 }
 .loginbtn {
     font-family: NotoSansKR-Regular;
     font-size: 0.8333333333333334VW;
-    color: darkgray;
+    background-color: darkgray;
 }
 .on{
     color:red;
 }
+
 .tablebox {
     width: 35.4VW;
     height: 16.6VW;
@@ -47,7 +49,41 @@
     margin-left: 32.29VW;
     border-radius: 0.83VW;
     border-spacing: 0px 0px;
+    text-align: center;
 }
+
+.box input[type = "text"],.box input[type = "password"]{
+    border:0 ;
+    background: none;
+    display: block;
+    margin:1vw auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding:0.8vw 0.2vw;
+    width:13.8889vw;
+    outline:none;
+    border-radius: 1.6667vw;
+    transition: 0.5s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    width: 15vw;
+    border-color: #8d2ecc;
+}
+.box input[type = "submit"]{
+    border:0 ;
+    background: none;
+    margin: auto;
+    text-align: center;
+    border: 2px solid #8d2ecc;
+    padding:0.4vw 1.4vw;
+    outline:none;
+    border-radius: 24px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
 @media screen and (max-width:480px) {
     .tablebox {
         width: 34.4VW;

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/font.css" />
+        <link rel="stylesheet" href="/assets/css/check.css" />
+    <title>Document</title>
+</head>
+<body>
+    <form id="form1" runat="server" style="user-select:none;">
+        <%
+            Random rand = new Random();
+            string[] lst = { "중앙에 위치한 동은?", "본교 도서관의 이름은?", "본교 체육관의 이름은?" };
+            int randNum = rand.Next(lst.Length);
+            Question.Text = lst[randNum];
+            Session["Q"] = lst[randNum];
+            
+            %>
+        <div style="display:flex;">
+            <div class="hello Dokdo">재학생 확인</div>
+            <div class="quiz" style="height:6.1vw;" id="quiz">
+            <div style="align-items:flex-start; flex-direction: row; margin-top:1vw;">
+				<label ID="Question" runat="server" Text="" CssClass="quest">
+				<input type="text" ID="Answer" runat="server" CssClass="quiz-input" placeholder="정답" >
+            </div>
+				<input type="button" ID="checkBtn" runat="server" Text="확인" CssClass="quiz-btn" OnClick="Check_cnsa" />
+            </div>
+        </div>
+
+</form>
+</body>
+</html>

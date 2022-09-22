@@ -10,29 +10,27 @@
 </head>
 <body>
     <form id="form1" runat="server" style="user-select:none;">
-        <table border="1" class="tablebox">
-            <tr>
-          <td style="width:14.47VW; border:none; background-image:url('/assets/img/adminlogin.png'); background-size:14.58VW 16.66VW;">
+        <table border="1" class="tablebox" bgcolor="000099">
+            <tr >
+          <td style="width:7.235VW; border:none;">
             </td>
             <td style="border:none; ">
-                <div class="logintxt" style="margin-left: 2.08VW; " >로그인</div>
-                <hr style="  border:solid 0.1VW #002897;width:3.69VW; margin-top:0.05VW;margin-bottom: 2.6VW; margin-left:2.18VW">
-              <div style="margin-left:2.08VW">
-                <div style="margin-bottom:1.04VW;">
+                <div class="logintxt">관리자 로그인</div>
+              <div class="box">
+                <div style="margin-bottom:0.52VW;">
                     <input type="text" ID="UserID" runat="server" BorderStyle="None" placeholder="ID" >
-                    <hr style="border:solid 0.05VW grey; width:17.18VW; margin-left:0px; " />
               </div>
                 <div style="margin-bottom:0.78VW;">
-                     <input type="text" ID="UserPW" runat="server" BorderStyle="None" TextMode="Password" placeholder="Password">
-                    <hr style="border:solid 0.05VW grey; width:17.18VW; margin-left:0px; " />
+                     <input type="password" ID="UserPW" runat="server" BorderStyle="None" placeholder="Password">
                 </div>
                 <div>
-                    <input type="button"  Text="로그인" OnClick="Login_Click" runat="server" Class="loginbtn" style=" border-radius:0.52VW; background-color:white" />
-                    <input type="button"  Text="회원가입" OnClick="Apply_Move" runat="server" Class="loginbtn" style=" border-radius:0.52VW; background-color:white; margin-left:30px" />
+                    <input type="submit"  value="로그인" OnClick="Login_Click" runat="server" Class="loginbtn" style=" border-radius:0.52VW; background-color:white" />
+                    <input type="submit"  value="회원가입" OnClick="Apply_Move" runat="server" Class="loginbtn" style=" border-radius:0.52VW; background-color:white; margin-left:0.5vw" />
 
                 </div>
                   </div>
             </td>
+            <td style="width:7.235VW; border:none;"></td>
         </tr>
         </table>
     
